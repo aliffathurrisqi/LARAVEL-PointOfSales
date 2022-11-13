@@ -1,0 +1,32 @@
+.sidebar-content{
+    background:#083AA9;
+}
+
+.sidebar-link,a.sidebar-link{
+    background:none;
+}
+
+.sidebar-link:hover{
+    background:none;
+}
+
+.wrapper{
+    background:none;
+}
+
+.sidebar-item.active .sidebar-link:hover,.sidebar-item.active>.sidebar-link{
+    border-left: #001c59 solid 5px;
+    background:linear-gradient(90deg,#002E94,#083AA9 90%,transparent);
+    color:#e9ecef;
+}
+
+.stat{
+    background:none;
+    font-size: 80px;
+}
+
+/* .stat svg{
+    stroke-width:1.5;
+    color:#3b7ddd
+    !important;height:18px;width:18px
+} */
