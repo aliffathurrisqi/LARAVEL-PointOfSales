@@ -45,14 +45,14 @@ class DatabaseSeeder extends Seeder
         ]);
 
         Purchase::create([
-            'transaction_note' => NOW()->format('YmdHis'),
+            'transaction_note' => NOW()->subday(1)->format('YmdHis'),
             'item_code' => "PC002",
             'quantity' => 2,
             'total' => 11000
         ]);
 
         Purchase::create([
-            'transaction_note' => NOW()->subday(1)->format('YmdHis'),
+            'transaction_note' => NOW()->format('YmdHis'),
             'item_code' => "PC001",
             'quantity' => 1,
             'total' => 4500

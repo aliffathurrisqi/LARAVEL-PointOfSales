@@ -9,6 +9,8 @@ class Item extends Model
 {
     use HasFactory;
 
+    public $guarded = ['id'];
+
     public function purchases()
     {
         return $this->hasMany(Purchase::class, 'item_code', 'code');

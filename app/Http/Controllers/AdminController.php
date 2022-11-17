@@ -16,6 +16,7 @@ class AdminController extends Controller
             'dashboard',
             [
                 'title' => "Dashboard",
+                'active' => "Dashboard",
                 'items' => Item::with(['purchases']),
                 'transactions' => Transaction::with(['purchases']),
                 'purchases' => Purchase::with(['items','transactions']),
